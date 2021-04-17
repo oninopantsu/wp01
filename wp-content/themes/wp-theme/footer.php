@@ -18,13 +18,13 @@
       <h3>About</h3>
       <ul>
         <li>
-          <a href="">インタビュー</a>
-        </li>
-        　　　　　　　　<li>
-          <a href="">プログラミング</a>
+          <a href="<?php echo get_category_link(3); ?>">プログラミング</a><!-- 追加 -->
         </li>
         <li>
-          <a href="">お問い合わせ</a>
+          <a href="<?php echo get_category_link(7); ?>">インタビュー</a><!-- 追加 -->
+        </li>
+        <li>
+          <a href="<?php echo home_url(contact); ?>">お問い合わせ</a>
         </li>
         <li><a href="https://estra.jp">運営会社</a></li>
         <li><a href="https://coachtech.site">COACHTECH</a></li>
@@ -35,5 +35,6 @@
 </footer>
 <?php wp_footer(); ?>
 </body>
+
 
 </html>
